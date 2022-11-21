@@ -1,17 +1,10 @@
-const typeUser="admin" // user, guest, bot
+let a=0;
+const b=10;
+let message="";
 
-switch (typeUser) {
-    case 'admin':
-        console.log('You are admin');
-        break;
-    case 'user':
-        console.log('You are user');
-        break;
-    case 'bot':
-        console.log('you are bot');
-        break;
-        default:
-         console.log('Who are you?');
-         break;
+while (++a<=b) {
+    message += `${a}${a !==b ? ", " : "."} `;
 }
-   
+
+console.log(message);
+
